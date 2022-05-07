@@ -18,6 +18,6 @@ app.use(express.json());
 app.use(routes);
 
 //colocar o server no ar na porta escolhida
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
   console.log("server running");
 });
